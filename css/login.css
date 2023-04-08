@@ -1,0 +1,372 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../image/background2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    color: white;
+}
+
+
+.logo{
+    width: 300px;
+    height: 150px;
+    cursor: pointer;
+    background: transparent;
+    
+}
+
+.nav{
+    width: 85%;
+    height: 15%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.button{
+    color: #fbfbfb;
+    padding: 10px 25px;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+}
+
+.button:hover{
+    background : linear-gradient(to right, #ff105f, #ffad06); 
+}
+.submit-btn:hover{
+    background : linear-gradient(to right, #ff105f, #ffad06); 
+}
+
+.content{
+    color: #fbfbfb;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+.content button{
+    margin: 33px 40px ;
+}
+
+
+h1{
+    margin: 10px 0 30px ;
+    position: relative;
+    font-size: 4em;
+    color: #0e3742;
+    text-transform: uppercase;
+    text-align: center;
+    -webkit-box-reflect: below 1px linear-gradient(transparent #0008);
+    outline: none;
+    animation: animate1 5s linear infinite;
+}
+@keyframes animate1 {
+    
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%
+    {
+        color: #0e3742;
+        text-shadow: none;
+    }
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%{
+        color: #fff;
+        text-shadow:  0 0 10px #03bcf4,
+        0 0 10px #03bcf4,
+        0 0 10px #03bcf4,
+        0 0 10px #03bcf4,
+        0 0 10px #03bcf4;
+    }
+}
+
+
+.font {
+    margin: 10px 0px  0px 10vw;
+    position: relative;
+  }
+  
+  .font h2 {
+    /* margin: 10px   40px ; */
+    color: #fff;
+    font-size: 4em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+  }
+  
+  .font h2:nth-child(1) {
+    color: transparent;
+    -webkit-text-stroke: 2px #03a9f4;
+  }
+  
+  .font h2:nth-child(2) {
+    color: #03a9f4;
+    animation: animate 4s ease-in-out infinite;
+  }
+  
+  @keyframes animate {
+    0%,
+    100% {
+      clip-path: polygon(
+        0% 45%,
+        16% 44%,
+        33% 50%,
+        54% 60%,
+        70% 61%,
+        84% 59%,
+        100% 52%,
+        100% 100%,
+        0% 100%
+      );
+    }
+  
+    50% {
+      clip-path: polygon(
+        0% 60%,
+        15% 65%,
+        34% 66%,
+        51% 62%,
+        67% 50%,
+        84% 45%,
+        100% 46%,
+        100% 100%,
+        0% 100%
+      );
+    }
+  }
+  
+
+
+
+
+
+.side-bar{
+    width: 50px;
+    height: 100vh;
+    background-color: linear-gradient(#d30e0e #7fbbce);
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.menu{
+    display: block;
+    width: 25px;
+    margin: 40px auto 0;
+    cursor: pointer;
+}
+.social-link img{
+    width: 25px;
+    margin: 5px;
+    cursor: pointer;
+}
+.social-link{
+    width: 50px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50);
+}
+
+.useful-link img{
+    width: 25px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.useful-link{
+    width: 50px;
+    text-align: center;
+    position: absolute;
+    bottom: 30px;
+}
+
+.bubbles{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -70px;
+}
+
+@keyframes bubble{
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+}
+
+.img1{
+    animation: bubble 3.5s 1s infinite; 
+    width: 35px;
+}
+.img2{
+    animation: bubble 3s 4.5s infinite; 
+    width: 50px;
+}
+.img3{
+    animation: bubble 4s 2.5s infinite; 
+    width: 20px;
+}
+.img4{
+    animation: bubble 3s 7s infinite; 
+    width: 45px;
+}
+.img5{
+    animation: bubble 4s 5.5s infinite; 
+    width: 20px;
+}
+.img6{
+    animation: bubble 3s 3s infinite; 
+    width: 40px;
+}
+.img7{
+    animation: bubble 3.5s 1s infinite;
+    width: 25px; 
+}
+.img8{
+    animation: bubble 3s 4s infinite;
+    width: 30px; 
+}
+.img9{
+    animation: bubble 4s 3s infinite;
+    width: 40px; 
+}
+
+
+
+/* login page started */
+
+.heroo{
+    height: auto;
+    width: 100vw;
+    /* background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(background2.jpg); */
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+.form-box{
+    width: 380px;
+    height: 580px;
+    position: relative;
+    margin: 6% auto;
+    /* background: #fff; */
+    padding: 5px;
+    overflow: hidden;
+}
+
+.button-box{
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 30px;
+}
+.toggle-btn{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+#btn1{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    border-radius: 30px;
+    transition: .5s;
+
+}
+
+.input-group{
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    /* height: 580px; */
+    transition: .5s;
+
+                                                                                                                                                                                    
+}
+.input-field{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px sol #999;
+    outline: none;
+    background: transparent;
+
+
+}
+.submit-btn{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, #b97189, hsl(40, 63%, 75%));
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+.check-box{
+    margin: 30px 10px 30px 0;
+}
+span{
+    color: rgb(189, 21, 21);
+    font-size: 12px;
+    bottom: 68px;
+    position: absolute;
+}
+#login{
+    left: 50px;
+}
+#register{
+    left: 450px;
+}
+/* login page End */
+
+
+.otpcenter{
+    width: 230px;
+    height: auto;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.common{
+    
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

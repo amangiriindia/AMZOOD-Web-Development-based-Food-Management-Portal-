@@ -1,0 +1,240 @@
+/* 
+    Author: Aman Giri;
+    Theme: Restaurant Food Order;
+    version: 1.0;
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper{
+   
+    padding: 1%;
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+.text-center{
+    text-align: center;
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+.tbl-full{
+    width: 100%;
+}
+
+.tbl-30{
+    width: 30%;
+}
+
+table tr th{
+    border-bottom: 1px solid black;
+    padding: 1%;
+    text-align: left;
+}
+
+table tr td{
+    padding: 1%;
+}
+
+.btn-primary{
+    background-color: #9bec0f;
+    padding: 1%;
+    font-size: 2em;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-primary:hover{
+    background-color: #37fa54;
+}
+.btn-denger{
+    background-color: #ff6b81;
+    padding: 1%;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.btn-denger:hover{
+    background-color:#ff4757;
+}
+
+.btn-secondary{
+    background-color: #7bed9f;
+    padding: 1%;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+.btn-secondary:hover{
+    background-color: #2ed573;
+}
+
+.success{
+    color: #2ed573;
+}
+.error{
+    color: #ff4757;
+}
+
+
+
+.logo{
+    width: 350px;
+    height: 200px;
+    cursor: pointer;
+    background: transparent;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+}
+
+.img-responsive{
+    width: 100%;
+}
+
+.img-curve{
+    border-radius: 15px;
+}
+.menu{
+    border-bottom: 1px solid gray ;
+    text-align: center;
+}
+.menu ul {
+    list-style-type: none;
+}
+.menu ul li{
+    display: inline;
+    padding: 1%;
+}
+.menu ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #ff6b81;
+}
+.menu ul li a:hover{
+    color: #ff4757;
+}
+/* css for main contant*/
+.homepage{
+   min-width: 100vw;
+   min-height: 100vh;
+   background: url('../images/img1.jpg');
+   background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.color{
+    color: #37fa54;
+}
+.main-content {
+    
+    background-color: #f1f2f6;
+    padding: 3% 0;
+}
+
+.cal-4{
+    width: 18%;
+    background-color: white;
+    margin: 1%;
+    padding: 2%;
+    float: left;
+}
+
+/* css for table */
+.table-box{
+    display: grid;
+    background-color: hsl(284, 94%, 51%);
+    grid-column-gap:9px ;
+
+    
+}
+.item{
+  background-color: rgb(145, 199, 173);
+  border: 2px solid  ;
+  text-align: center;
+}
+.item-hed{
+    background-color:rgb(199, 216, 148);
+  border: 2px solid  ;
+  text-align: center;
+}
+.item-img{
+    height: 20vh;
+    width: 17vw;
+    background-color: rgb(145, 199, 173);
+   border: 2px solid;
+    text-align: center;
+    
+}
+
+.item-img img{
+    height: 20vh;
+    width: 15vw;
+    
+}
+/* css for Admin*/
+.admin{
+    min-height: 90vh;
+    min-width: 100vw;
+}
+/* css for footer*/
+.footer{
+    background-color: #ff4757;
+    color:white ;
+}
+
+
+/*css for login*/
+.login{
+    width: 100vw;
+    height: 100vh;
+    background: url(../images/img3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.login1{
+    border: 1px solid gray;
+    width: 30vw;
+    height: 35vh;
+    margin: 10% auto;
+    padding: 2%;
+    background: url(../images/img3.jpg);
+}
+.login1 span{
+    color: yellowgreen;
+}
+.login1 h1{
+    color: yellowgreen;
+}
+.logo{
+    width: 150px;
+    height: 100px;
+    cursor: pointer;
+    background: transparent;
+}
+
+.walpaper{
+    background-image: url('images\foodwww.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}

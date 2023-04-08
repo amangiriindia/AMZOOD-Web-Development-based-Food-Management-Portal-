@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flip-Image</title>
+    <style>
+        *{
+            box-sizing: border-box;
+
+        }
+        
+ 
+        .container{
+            display: flex;
+            /* height: 150vh; */
+            width: 100vw;
+            margin: 40px auto;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            /* align-items: center;
+             */
+             align-content: center;
+             background: linear-gradient(to left,tomato,orange);
+           
+        }
+        .container1{
+             width: 400px;
+            height: 400px;
+            position: relative; 
+            margin: 10px;
+        }
+        .front img {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+        .front h2{
+            position: absolute;
+            top: 50%;
+            left: 30%;
+            color: red;
+        }
+        .back {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: black;
+            color: white;
+            padding: 15px;
+            transform: perspective(600px) rotateY(180deg);
+            transition: transform .5s linear 0s;
+            backface-visibility: hidden;
+            border-radius: 10px;
+        }
+        .front{
+            transform: perspective(600px) rotateY(0deg);
+            transition: transform .5s linear 0s;
+        }
+        .container1:hover > .front{
+            transform: perspective(600px) rotateY(-180deg); 
+        }
+        .container1:hover > .back{
+            transform: perspective(600px) rotateY(-0deg); 
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container1">
+            <div class="front">
+                <img src="../images/menu-burger.jpg" >
+                <h2>Burger</h2>
+            </div>
+            <div class="back">
+                <h1>Burger</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, illo nesciunt. Itaque cumque magnam illo dolores ad sap
+                </p>
+            </div>
+        </div>
+
+            <div class="container1">
+                <div class="front">
+                    <img src="../images/menu-burger.jpg" >
+                    <h2>Burger</h2>
+                </div>
+                <div class="back">
+                    <h1>Burger</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, illo nesciunt. Itaque cumque magnam illo dolores ad sap
+                    </p>
+                </div>
+           </div>
+
+        <div class="container1">
+            <div class="front">
+                <img src="../images/menu-burger.jpg" >
+                <h2>Burger</h2>
+            </div>
+            <div class="back">
+                <h1>Burger</h1>
+              
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, illo nesciunt. Itaque cumque magnam illo dolores ad sap
+                </p>
+            </div>
+        </div>
+
+        <div class="container1">
+            <div class="front">
+                <img src="../images/menu-burger.jpg" >
+                <h2>Burger</h2>
+            </div>
+            <div class="back">
+                <h1>Burger</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, illo nesciunt. Itaque cumque magnam illo dolores ad sap
+                </p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
